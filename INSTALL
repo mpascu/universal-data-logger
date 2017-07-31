@@ -1,0 +1,3 @@
+sudo apt-get install python3 (this is being run on python 3.5.2 and django 1.11.3)
+(virtualenv)
+pip install django

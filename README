@@ -1,0 +1,4 @@
+-PROJECT STRUCTURE
+This django project comes with a basic app called baseapp wich can serve as
+a start point towards developing a single data logger or you can make copies
+of it to make various independent data loggers.
