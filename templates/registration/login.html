@@ -1,0 +1,28 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <div id="login_container" class="form-signin">
+
+        <form class="form-signin span4" id="login_form" method="post" action="/login/">
+            <input type="hidden" name="next" value="{{next}}">
+        	<h3 class="form-signin-heading">Login</h3>
+        	{% csrf_token %}
+
+        	{% if form.errors %}
+        		<p><font color='#FF0000'><strong>Usuari o contrasenya incorrectes</strong></font></p>
+        	{% elif disabled_account %}
+        		<p><strong>Your account is currently disabled; we can't log you in!</strong></p>
+        	{% endif %}
+
+        Usuari:<p> <input type="text" class="form-control" placeholder="nom d'usuari" name="username" value="" size="25" />
+        <br />
+        Contrasenya:<p> <input type="password" class="form-control" placeholder="Contrasenya" name="password" value="" size="25" />
+        <br />
+        <button class="btn btn-primary" type="submit">Entra</button>
+    </form>
+
+    </div> <!-- /login_container -->
+    <p>
+{% endblock %}

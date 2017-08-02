@@ -1,0 +1,341 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+html{
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  //padding-bottom: 40px;
+  color: #5a5a5a;
+  background-color: #eee;
+  margin-bottom: 80px;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+.navbar{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
+  background-color: : rgb(76,76,76); /* Old browsers */
+  /*background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+  /*background-color: : -webkit-linear-gradient(top, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  /*background: linear-gradient(to bottom, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+}
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+.selreg {
+  padding: 9px;
+  position: relative;
+  display: block;
+}
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+.navbar-inverse .navbar-brand  {
+  color: #ffffff;
+}
+.liPressed{
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0065ea+0,006efe+12,1379ff+25,0062e2+39,0050b8+50,003274+51,003e90+60,004fb6+76,0045a0+91,004292+100 */
+background: rgb(0,101,234); /* Old browsers */
+color: #ffffff !important;
+/*background: -moz-linear-gradient(top, rgba(0,101,234,1) 0%, rgba(0,110,254,1) 12%, rgba(19,121,255,1) 25%, rgba(0,98,226,1) 39%, rgba(0,80,184,1) 50%, rgba(0,50,116,1) 51%, rgba(0,62,144,1) 60%, rgba(0,79,182,1) 76%, rgba(0,69,160,1) 91%, rgba(0,66,146,1) 100%); /* FF3.6-15 */
+/*background: -webkit-linear-gradient(top, rgba(0,101,234,1) 0%,rgba(0,110,254,1) 12%,rgba(19,121,255,1) 25%,rgba(0,98,226,1) 39%,rgba(0,80,184,1) 50%,rgba(0,50,116,1) 51%,rgba(0,62,144,1) 60%,rgba(0,79,182,1) 76%,rgba(0,69,160,1) 91%,rgba(0,66,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+/*background: linear-gradient(to bottom, rgba(0,101,234,1) 0%,rgba(0,110,254,1) 12%,rgba(19,121,255,1) 25%,rgba(0,98,226,1) 39%,rgba(0,80,184,1) 50%,rgba(0,50,116,1) 51%,rgba(0,62,144,1) 60%,rgba(0,79,182,1) 76%,rgba(0,69,160,1) 91%,rgba(0,66,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0065ea', endColorstr='#004292',GradientType=0 ); /* IE6-9 */
+
+}
+
+#login_container {
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background: #ffffff;
+  -webkit-box-shadow: 10px 10px 17px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 17px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 17px 0px rgba(0,0,0,0.75);
+  width: 300px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#chart-container{
+  
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contain{
+  margin-left: auto;
+  margin-right: auto;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  max-width: none;
+  height: 500px;
+}
+
+/* Content
+------------------------- */
+.page-content{
+  width: 90%;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.jumbotron{
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.flex-container {
+  display: flex; /* or inline-flex */
+  justify-content: space-between;
+  flex-direction: row
+}
+
+.flex-item {
+  margin: auto;
+}
+
+.flex-item-shrink {
+  height: 34px;
+  flex-basis: 20%;
+  flex-shrink: 1;
+}
+
+.flex-item-grow {
+  height: 34px;
+  width: 300px;
+  flex-basis: auto;
+  flex-grow: 1;
+}
+
+/* BUTTONS
+------------------------- */
+.xls-button{
+  width: 200px;
+  height: auto;
+  margin: 20px;
+  padding: auto;
+  align-content: center;
+}
+.xls-button object {
+  margin: 15px;
+  width: 50px;
+  height: 50px;
+}
+.xls-button p {
+  margin: 0px;
+}
+
+.radio_button{
+  width: 150px;
+  height: 40px;
+  position: relative;
+  top: 50%;
+
+}
+
+/* fridgeContainer CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.fridgeContainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+.fridgeContainer .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+  //border: 1px solid #666666;
+}
+.fridgeTitle{
+  color: #ffffff;
+  background-color: rgb(40,96,144);
+  border-bottom: 1px solid #666666;
+}
+
+.fridgeSubTitle{
+  color: #ffffff;
+  background-color: rgb(90,146,194);
+  border-bottom: 1px solid #666666;
+}
+
+.fridgeSubTitle h4{
+    margin: 0px;
+}
+
+.fridgeContainer h2 {
+  font-weight: normal;
+
+  margin: 0px;
+  padding: 5px;
+  
+}
+.temp{
+  padding-top: 8px;
+  
+}
+.degrees{
+  padding: 10px;
+  background-color: #66FF66
+}
+.fridgeContainer .col-lg-4 p {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.fridge-row{
+  text-align: center;
+}
+/* fridgeBox
+------------------------- */
+.fridge-box{
+  background: #ffffff;
+  margin: 20px;
+  display: inline-block;
+  float: none;
+  width: auto;
+  height: auto;
+  //-moz-border-radius: 5px;
+  //border-radius: 5px;
+  border: 4px;
+  border-color: #777777;
+  padding: 0px;
+}
+
+.grey-fridge{
+  -webkit-box-shadow: 10px 10px 17px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 17px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 17px 0px rgba(0,0,0,0.75);
+}
+.red-fridge{
+  -webkit-box-shadow: 10px 10px 18px 0px rgba(204,0,37,1);
+  -moz-box-shadow: 10px 10px 18px 0px rgba(204,0,37,1);
+  box-shadow: 10px 10px 18px 0px rgba(204,0,37,1);
+
+}
+.blue-fridge{
+
+-webkit-box-shadow: 10px 10px 18px 0px rgba(23,99,186,1);
+-moz-box-shadow: 10px 10px 18px 0px rgba(23,99,186,1);
+box-shadow: 10px 10px 18px 0px rgba(23,99,186,1);
+
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 0px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #ffffff;
+}
