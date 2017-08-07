@@ -113,3 +113,4 @@ class Receiver(models.Model):
     def __str__(self):
         return "%s - %s - %s" % (self.name, self.phone_number, self.email)
 
+

@@ -25,7 +25,7 @@ SECRET_KEY = 'pqn-l23b*0jx0izv9sxf%@v7smrz67-1q&d43(-5%s7jekp1je'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.9',
+ALLOWED_HOSTS = ['192.168.1.13',
                  'localhost',
                  '127.0.0.1',
                 ]
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'base',
+    'juncosa',
 ]
 
 MIDDLEWARE = [

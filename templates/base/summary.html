@@ -1,0 +1,71 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+
+{% load extra_tags %}
+
+{% block content %}
+
+     <script type="text/javascript">
+
+      document.getElementById("tab_summary").className="liPressed";
+
+      function checkTemp( now, min, max, id){
+          nevera = $("#fridge"+id);
+          if ((now<min) || (now>max)){
+            nevera.removeClass("grey-fridge");
+            nevera.addClass("red-fridge");
+            //nevera.className="col-lg-4 fridge-box red-fridge";
+            //console.log("error temperatura"+id+", num arg: "+arguments.length + "min: " + min+ "max: " + max);
+          }
+          if ((now>min) && (now<max)){
+            nevera.removeClass("red-fridge");
+            nevera.addClass("grey-fridge");
+            //nevera.className="col-lg-4 fridge-box grey-fridge";
+            //console.log("temperatura"+id);
+          }
+      }
+
+      </script>
+      
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container fridgeContainer">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row fridge-row">
+
+        {% for sensor in sensors %}
+        <div id="fridge{{sensor.sensorId}}" class="col-lg-4 fridge-box ">
+            <script type="text/javascript">
+                mintemp = '{{sensor.min_value}}';
+                maxtemp = '{{sensor.max_value}}';
+                var min = parseFloat(mintemp.replace(",","."));
+                var max = parseFloat(maxtemp.replace(",","."));
+                //checkTemp('6', min, max , {{sensor.sensorId}});
+               </script>
+            <div class="fridgeTitle">
+                <h2>{{sensor.name}}</h2>
+            </div>
+
+            <div class="fridgeSubTitle">
+                <h4>{{ sensor.sensorId|getShortTypeOfSensor }}</h4>
+            </div>
+
+            <p class="temp"><font class="temp">Temperatura actual: {{ sensor.sensorId|getLasValueOfSensor }}</font></p>
+            <p>Limit superior: {{sensor.max_value}}ºC</p>
+            <p>Limit inferior: {{sensor.min_value}}ºC</p>
+            <p>Enviament d'alarmes activat: Si</p>
+            <p><a class="btn btn-primary" href="{% url 'balafia:sensor_detail' sensorid=sensor.sensorId %}" role="button">Veure detalls &raquo;</a></p>
+
+        </div><!-- /.col-lg-4 -->
+        {% endfor %}
+
+
+
+      </div><!-- /.row -->
+    </div>
+
+{% endblock %}
